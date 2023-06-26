@@ -7,8 +7,21 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
 body{
     font-family: 'Poppins', sans-serif;
+}
+
+.offset::before{
+    display: block;
+    content: "";
+    height: 10rem;
+    margin-top: -1rem;
 }
 
 a{
@@ -65,6 +78,13 @@ h6{
     background-color: transparent;
     transition: all 0.5s ease;
     z-index: 999;
+}
+
+
+.nav.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3s);
 }
 
 .nav .navbar-toggler{
@@ -254,6 +274,7 @@ h6{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 .service h6{
@@ -319,6 +340,8 @@ h6{
 .pricing{
     display: block;
     text-align: center;
+    margin-bottom: 10rem;
+
 }
 
 .pricing .table{
@@ -441,3 +464,613 @@ h6{
 
 }
 
+
+.callToact{
+    background-image: linear-gradient(to right,rgba(255,0,0,0), #910AFA),url("images/2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10rem;
+
+}
+
+.callToact .parallax{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.callToact .parallax h3,.callToact .parallax p{
+    color: #fff;    
+}
+
+.callToact .parallax p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.callToact .parallax .call-news{
+
+    background-color: #fff;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 12px 0 12px 15px;
+    position: relative;
+}
+
+.callToact .parallax .call-news i{
+    color: #535CF1;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.callToact .parallax .call-news input{
+
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.callToact .parallax .call-news button{
+    background-image: linear-gradient(to right, #535CF1 , #A147E4);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/* Contact */
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h6{
+    margin-bottom: 3rem;
+}
+
+.contact .form{
+    width: 70%;
+}
+
+.contact .form .first-row,.contact .form .second-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+
+}
+
+
+
+.contact .form .first-row input,.contact .form .second-row input{
+    width: 47%;
+    height: 56px;
+    border: 1px solid #cbcde1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.contact .form textarea{
+    width: 100%;
+    resize: none;
+    border: 1px solid #cbcde1;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 16px;
+    outline: none;  
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
+}
+
+
+.contact .form .header-button{
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.contact .form .header-button a{
+    background-image: linear-gradient(to right, #535CF1 , #A147E4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;
+}
+
+/* Footer */
+
+footer{
+    background-color: #F4F6F7;
+    padding: 7rem
+
+}
+
+footer .row-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .row-one ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;}
+
+footer .row-one  a{
+
+    padding-right: 20px;
+    font-size: 26px;
+    color: #6c6c6c;
+}
+
+footer .second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer .second-row li{
+    padding-bottom: 12px;
+}
+
+footer .second-row h6{
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18pxs;
+    color: #6c6c6c;
+    padding-bottom: 20px;
+}
+
+footer .second-row li a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212;
+}
+
+
+footer .second-row .first-row:nth-child(4){
+
+    max-width: 300px;
+}
+
+footer .second-row .newsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+
+}
+
+footer .second-row .newsletter input{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 0;
+    background-color: rgba(33, 33, 33, 0.12);
+    font-weight: 500;
+    outline: none;
+}
+
+footer .second-row .newsletter input::placeholder{
+    opacity: 1;
+    color: #6c6c6c;
+}
+
+footer .second-row .newsletter button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0;
+    font-size: 20px;
+    color: #121212;
+    background-color:none;
+    cursor: pointer;
+}
+
+footer .second-row .text{
+    margin-top: 16px;
+}
+
+
+.copyright{
+    background-color: #2b354f;
+    padding: 23px 0;
+ 
+}
+
+.copyright p{
+    text-align: center;
+    color: #fff;
+}
+
+.copyright p a{
+    color: #1ABC9C;
+}
+
+
+@media only screen and (max-width: 946px){
+  
+    .nav {
+     
+        padding: 1rem 3rem;
+      
+    }
+
+    .nav .navbar-social {
+    
+        display: none;
+    }
+
+
+    .hero-text{
+       
+        width: 60%;
+    }
+    
+    .hero-text h3{
+        font-size: 33px;
+    }
+  
+
+    /* Service section */
+    #wrapper{
+        margin: 3rem 3rem 10rem 3rem;
+    }
+    
+    .service{
+      
+        margin-bottom: 3rem;
+    }
+    
+    .service h6{
+        margin-bottom: 3rem;
+    }
+    
+    .service .service-content{
+        flex-direction: column-reverse;
+        justify-content:center;
+    }
+    
+    .service .service-content .box{
+        width: 100%;
+       
+    }
+    
+    .service .service-content .box .box-one{
+      
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+   
+    .service .service-content .service-img{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    
+
+    /* Pricing  */
+
+.pricing .table{
+   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pricing h6{
+    margin-bottom: 6rem;
+}
+
+.pricing .basic{
+    width: 355px;
+    margin-bottom: 3rem;
+}
+
+.callToact{
+
+    margin-bottom: 5rem;
+
+}
+
+.callToact .parallax{
+   width: 80%;
+}
+
+
+.contact .form{
+    width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 774px){
+ 
+
+    .nav{
+      
+        padding: 0.7rem 1rem;
+      
+    }
+    
+    
+   
+    
+    .nav .navbar-toggler{
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+        z-index: 100000;
+    
+    }
+    
+    
+    .nav .menu-bar{
+        position: fixed;
+        top: 55px;
+        right: -360px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(256,256,256,0.9);
+        transition: all 0.6s ease;
+    }
+
+
+    .nav .menu-bar .menu-items{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;
+    
+    }
+    
+    .nav .menu-bar .menu-items li{
+        margin: 2rem 30px;
+    }
+    
+
+    .hero-text{
+       
+        width: 80%;
+    }
+    
+    .hero-text h6{
+        font-size: 16px;
+    }
+  
+
+      /* Service section */
+
+      #wrapper{
+        margin: 3rem 1rem 10rem 1rem;
+    }
+    
+    
+    .service h3{
+        
+        font-size: 33px;
+    }
+
+    .service h6{
+        
+        font-size: 16px;
+    }
+    
+    
+    .service .service-content .service-img{
+        width: 90%;
+    }
+    
+
+    /* Pricing  */
+
+    .pricing h3 {
+        font-size: 33px;
+    }
+
+
+    .pricing h6 {
+        font-size: 16px;
+    }
+
+.pricing .table{
+   flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.pricing h6{
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+.callToact .parallax{
+   width: 90%;
+}
+
+
+.callToact .parallax h3{
+    font-size: 33px;
+}
+
+
+.callToact .parallax h6{
+    font-size: 16px;
+}
+
+.contact h3{
+    font-size: 33px;
+}
+
+.contact h6{
+    font-size: 16px;
+}
+
+
+.contact .form{
+    width: 80%;
+}
+
+
+.contact .form .header-button a {
+
+    font-size: 16px;
+  
+}
+
+.callToact .parallax .call-news input {
+    font-size: 16px;
+}
+
+
+.callToact .parallax .call-news button {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #F4F6F7;
+    padding: 4rem 1rem;
+}
+
+footer .second-row {
+
+    flex-wrap: wrap;
+}
+
+footer .second-row .first-row {
+ margin-bottom: 1rem;
+}
+
+
+
+}
+
+@media only screen and (max-width: 541px){
+
+    .hero-text h3 {
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+    .hero-text .header-button li a.main-btn {
+   
+        margin-top: 0.7rem;
+    }
+    
+    .hero-text .header-button li a.main-btn{
+        font-size: 15px;
+    }
+
+  .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .service h6 {
+    text-align: justify;
+}
+
+    .service .service-content .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .service .service-content .box .box-one{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .callToact .parallax .call-news{
+        width: 300px;
+        height: 55px;
+        padding: 12px 0 12px 0;
+        display: block;
+        vertical-align: middle;
+        align-items: center;
+    }
+
+    .callToact .parallax .call-news button{
+        font-size: 13px;
+        position: relative;
+        margin: 35px 0 0 0;
+        background: #fff;
+        color: #8B16D1;
+    }
+
+    .callToact .parallax h3{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    
+    .contact .form {
+        width: 100%;
+    }
+    
+    .contact .form .first-row, .contact .form .second-row {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .contact .form .first-row input{
+        margin: 0 0;
+    }
+
+    .contact .form .first-row input, .contact .form .second-row input {
+        width:100%;
+        margin-bottom: 2rem;
+    }
+
+ 
+}
